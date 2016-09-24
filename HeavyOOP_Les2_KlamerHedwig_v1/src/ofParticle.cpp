@@ -19,6 +19,7 @@ void ofParticle::move() {
 }
 
 void ofParticle::draw() {
+	ofSetCircleResolution(100);
 	ofSetColor(outerColour);
 	ofDrawCircle(position.x, position.y, radius * 2);
 

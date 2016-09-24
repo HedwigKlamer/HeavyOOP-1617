@@ -3,21 +3,29 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-	part1 = ofParticle();
+	for (int i = 0; i < MAX_PARTICLES; i++) {
+		part1[i] = ofParticle();
+	}
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-	part1.move();
+	for (int i = 0; i < MAX_PARTICLES; i++) {
+		part1[i].move();
+	}
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-	part1.draw();
+	for (int i = 0; i < MAX_PARTICLES; i++) {
+		part1[i].draw();
+	}
 }
 
-/*
-void keyPressed(int key); {
 
+void ofApp::keyPressed(int key) {
+	for (int i = 0; i < MAX_PARTICLES; i++) {
+		part1[i] = ofParticle();
+	}
 }
-*/
+
