@@ -9,8 +9,11 @@ Particle::Particle(int startX, int startY) {
 	speed = ofVec2f(ofRandom(-5, 5),
 		ofRandom(-5, 5));
 
-	innerColour = ofColor(31, 127, 255, 127);
-	outerColour = ofColor(128, 255, 255, 15);
+	//innerColour = ofColor(31, 127, 255, 127);
+	//outerColour = ofColor(128, 255, 255, 15);
+
+	innerColour = ofColor(125, 125, 200, 127);
+	outerColour = ofColor(200, 255, 255, 15);
 }
 
 void Particle::setColours(ofColor center, ofColor inner, ofColor outer) {

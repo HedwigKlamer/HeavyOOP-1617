@@ -8,7 +8,7 @@ Particle* ParticleFactory::emit() {
 	else {
 		newParticle = new Particle(originX, originY);
 	}
-
+	newParticle->setColours(ofColor::white, inner, outer);
 	return newParticle;
 }
 

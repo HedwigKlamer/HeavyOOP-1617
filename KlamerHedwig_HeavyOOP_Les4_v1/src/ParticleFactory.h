@@ -12,6 +12,7 @@ public:
 
 	Particle* emit();
 
+
 private:
 	int originX;
 	int originY;

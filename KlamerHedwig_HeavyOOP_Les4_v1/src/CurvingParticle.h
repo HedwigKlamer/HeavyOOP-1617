@@ -8,7 +8,7 @@ class CurvingParticle : public Particle {
 public:
 	CurvingParticle(int startX, int startY);
 
-	void move();
+	virtual void move();
 
 	ofVec2f curve;
 };
