@@ -10,6 +10,7 @@
     <ClCompile Include="src\Particle.cpp" />
     <ClCompile Include="src\CurvingParticle.cpp" />
     <ClCompile Include="src\ParticleFactory.cpp" />
+    <ClCompile Include="src\ParticleReaper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -23,6 +24,7 @@
     <ClInclude Include="src\Particle.h" />
     <ClInclude Include="src\CurvingParticle.h" />
     <ClInclude Include="src\ParticleFactory.h" />
+    <ClInclude Include="src\ParticleReaper.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="icon.rc" />

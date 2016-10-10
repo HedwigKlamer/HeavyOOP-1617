@@ -176,12 +176,14 @@
     <ClCompile Include="src\ofApp.cpp" />
     <ClCompile Include="src\Particle.cpp" />
     <ClCompile Include="src\ParticleFactory.cpp" />
+    <ClCompile Include="src\ParticleReaper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\CurvingParticle.h" />
     <ClInclude Include="src\ofApp.h" />
     <ClInclude Include="src\Particle.h" />
     <ClInclude Include="src\ParticleFactory.h" />
+    <ClInclude Include="src\ParticleReaper.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

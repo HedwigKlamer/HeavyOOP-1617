@@ -4,6 +4,7 @@
 #include "Particle.h"
 #include "ParticleFactory.h"
 #include "CurvingParticle.h"
+#include "ParticleReaper.h"
 
 class ofApp : public ofBaseApp{
 
@@ -17,4 +18,5 @@ class ofApp : public ofBaseApp{
 		ParticleFactory factory1;
 		ParticleFactory factory2;
 		ParticleFactory factory3;
+		ParticleReaper reaper;
 };

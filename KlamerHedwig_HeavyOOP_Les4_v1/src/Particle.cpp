@@ -5,7 +5,7 @@ Particle::Particle(int startX, int startY) {
 	position = ofPoint(startX,
 		startY);
 
-
+	lifetime = 0;
 	speed = ofVec2f(ofRandom(-5, 5),
 		ofRandom(-5, 5));
 
@@ -24,10 +24,12 @@ void Particle::setColours(ofColor center, ofColor inner, ofColor outer) {
 
 void Particle::move() {
 	position += speed;
+	lifetime++;
 }
 
 
 void Particle::draw() {
+	ofSetCircleResolution(100);
 	ofSetColor(outerColour);
 	ofDrawCircle(position.x, position.y, radius * 2.0);
 
@@ -36,4 +38,9 @@ void Particle::draw() {
 
 	ofSetColor(centerColour);
 	ofDrawCircle(position.x, position.y, radius * 0.25);
+}
+
+bool Particle::isDead() {
+	return lifetime > MAX_LIFETIME;
+	
 }
