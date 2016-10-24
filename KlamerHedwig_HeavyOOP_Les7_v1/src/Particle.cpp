@@ -30,7 +30,7 @@ void Particle::move() {
 }
 
 
-void Particle::draw() {
+void Particle::draw()const {
     ofSetColor(outerColour);
     ofDrawCircle(position.x, position.y, radius * 2.0);
 

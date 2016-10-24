@@ -13,7 +13,17 @@ class ParticleEmitter {
 
         void setColours(ofColor innerColour, ofColor outerColor);
 
+		void move();
+		void draw();
+		void setup();
+
         Particle* emit();
+
+		ofPoint position;
+		float angle;
+		float speed;
+		int radius;
+
 
     private:
         ParticleEmitter();

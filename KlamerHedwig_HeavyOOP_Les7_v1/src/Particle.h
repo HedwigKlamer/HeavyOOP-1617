@@ -12,7 +12,7 @@ class Particle {
 
         virtual void move();
 
-        void draw();
+        void draw() const;
 
         void setColours(ofColor center, ofColor inner, ofColor outer);
 		

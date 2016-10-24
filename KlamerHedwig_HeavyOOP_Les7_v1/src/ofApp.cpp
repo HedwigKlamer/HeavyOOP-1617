@@ -6,6 +6,7 @@ void ofApp::setup() {
     emitter->setOrigin(200, 200);
     emitter->setColours(ofColor(31, 127, 255, 127), ofColor(128, 255, 255, 15));
     emitter->setCurvingParticleRatio(0.1);
+	emitter->setup();
 }
 
 void ofApp::update() {
@@ -17,6 +18,8 @@ void ofApp::update() {
         Particle* freshParticle = emitter->emit();
         particles.push_back(freshParticle);
     }
+	
+	emitter->move();
 
     reaper.cleanup(particles);
 
