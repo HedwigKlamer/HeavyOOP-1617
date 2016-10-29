@@ -6,7 +6,8 @@ void ofApp::setup() {
 	factory1 = ParticleFactory::instance();
 	factory1->setOrigin(300, 300);
 	factory1->setCurvingParticleRatio(0.1);
-	factory1->setColours(ofColor(125, 125, 200, 127), ofColor(200, 255, 255, 15), ofColor(31, 127, 255, 127), ofColor(128, 255, 255, 15),ofColor(255, 125, 200, 127), ofColor(255, 255, 255, 15));
+	//factory1->setColours(ofColor(125, 125, 200, 127), ofColor(200, 255, 255, 15), ofColor(31, 127, 255, 127), ofColor(128, 255, 255, 15),ofColor(255, 125, 200, 127), ofColor(255, 255, 255, 15));
+	factory1->setColours(ofColor(255, 0, 0, 127), ofColor(255, 0, 0, 15), ofColor(0, 255, 0, 127), ofColor(0, 255, 0, 15), ofColor(0, 0, 255, 127), ofColor(0,0,255));
 
 	//factory1->setColours(ofColor(125, 125, 200, 127), ofColor(200, 255, 255, 15));
 	//factory1->setColours(ofColor(31, 127, 255, 127), ofColor(128, 255, 255, 15));
